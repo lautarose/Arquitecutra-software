@@ -17,5 +17,5 @@ func InsertBody(c *gin.Context) {
 		return
 	}
 	fmt.Println(body)
-	c.JSON(http.StatusAccepted, &body)
+	c.JSON(201, &body)
 }
